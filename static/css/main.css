@@ -183,7 +183,9 @@ ul {
 
 .site-title a {
 	color: #333;
+    font-weight: 600;
 	text-decoration: none !important;
+    margin-top: 3px;
 }
 
 .post ul li {
@@ -238,7 +240,7 @@ pre code {
 }
 
 .header nav {
-    margin-top: 20px;
+    /* margin-top: 20px; */
     border-top: 1px solid #f4f4f4;
 }
 
@@ -282,6 +284,11 @@ pre code {
 	max-height: 15px;
 }
 
+.header .site-header {
+    display: flex; 
+    justify-content: space-between;
+}
+
 .header .site-description {
     display: flex;
     justify-content: space-between;
@@ -293,6 +300,7 @@ pre code {
     border: none;
     min-width: 50px;
     margin-left: 15px;
+    font-size: 1.3em;
 }
 
 .header .site-description nav ul svg {

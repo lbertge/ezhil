@@ -51,5 +51,19 @@
 		{{- end -}}
 	</div>
 	{{ partial "footer.html" . }}
+
+	{{/*  this somehow works, investigate later  */}}
+	{{/*  <div id="like_button_container"></div>
+
+    {{ $shims := dict }}
+    {{ $defines := dict }}
+    {{ if hugo.IsProduction }}
+      {{ $shims = dict "react" "js/shims/react.js"  "react-dom" "js/shims/react-dom.js" }}
+    {{ else }}
+      {{ $defines = dict "process.env.NODE_ENV" `"development"` }}
+    {{ end }}
+    {{ $js := resources.Get "js/like.jsx" | js.Build (dict "shims" $shims "defines" $defines ) }}
+    <script src="{{ $js.RelPermalink }}"></script>  */}}
+
 </body>
 </html>

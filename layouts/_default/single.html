@@ -7,13 +7,13 @@
 
 		<div class="post-header">
 			<h1 class="title">{{ .Title }}</h1>
-			<div class="meta">Posted at &mdash; {{ dateFormat "Jan 2, 2006" .Date }}{{ if .Draft }} <span class="draft-label">DRAFT</span> {{ end }}</div>
+			<div class="meta">Published &mdash; {{ dateFormat "Jan 2, 2006" .Date }} {{ if .Params.Time }} | {{ .Params.Time }} read {{ end }} {{ if .Draft }} <span class="draft-label">DRAFT</span> {{ end }}</div>
 		</div>
 
 		<div class="markdown">
 			{{ .Content }}
 		</div>
-
+		      
 		<div class="post-tags">
 			{{ if ne .Type "page" }}
 				{{ if gt .Params.tags 0 }}

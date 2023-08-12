@@ -1,0 +1,42 @@
+.highlight {
+    position: relative;
+    line-height: 17px; 
+}
+
+.copy-code-button {
+    border: 0px solid;
+    border-radius: 5px;
+    position:absolute;
+    font-family:jetbrains mono,ibm plex mono,roboto mono,consolas,monospace;
+    font-size:.875rem;
+    cursor:text;
+    top: 4px;
+    right: 4px;
+    display: none;
+}
+
+.copy-code-button:hover {
+    cursor: pointer;
+    background-color: #F2F2F2;
+}
+
+.copy-code-button:focus {
+    background-color: #E6E6E6;
+    outline: 0;
+}
+
+.copy-code-button:active {
+    background-color: #D9D9D9;
+}
+
+.copy-code-button:hover {
+    background-color: #D9D9D9;
+}
+
+.highlight:hover .copy-code-button {
+    display: block;
+}
+
+.highlight pre { 
+    margin: 0;
+}

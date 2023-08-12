@@ -29,6 +29,7 @@ body {
 	line-height: 1.6;
     font-size: 16px;
     -webkit-font-smoothing: antialiased;
+	/* background-color: #f3f5f7; */
 }
 
 a, a:hover {
@@ -53,6 +54,15 @@ h2:hover .header-anchor {
 html,button,input,select,textarea {
     color: #333;
 }
+
+body {
+    background-color: #ffffff;
+}
+
+/* html {
+    color: white;
+    color: #f6f8fa;
+} */
 
 ::-moz-selection {
     background: #b3d4fc;
@@ -229,7 +239,8 @@ ul {
 
 .highlight {
     background: 0 0;
-    background-color: #FAFAFA;
+    background-color: #282a36;
+    border-radius: 5px;
 }
 
 pre code {
@@ -328,7 +339,7 @@ pre code {
 }
 
 .header .site-description nav ul svg {
-    max-height: 15px;
+    max-height: 18px;
 }
 
 

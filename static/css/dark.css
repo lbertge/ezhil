@@ -9,8 +9,13 @@ body {
 }
 
 ::selection {
-    background: #666;
-    text-shadow: none
+    background: #fcb3b3;
+	/* background-color: rgba(252, 179, 179, 0.7); */
+    /* background: #fc8d8d; */
+	/* background-color: rgba(252, 141, 141, 0.99); */
+	/* color: #fc8c8d;  */
+
+    /* text-shadow: none; */
 }
 
 hr {
@@ -57,6 +62,7 @@ a:hover {
 
 .highlight {
 	background-color: #333;
+    border-radius: 5px;
 }
 
 table th {
